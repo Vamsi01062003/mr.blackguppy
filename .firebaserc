@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "production": "mr-aquaticvizag",
+    "default": "mrblackguppyonlinestore",
+    "defult": "akaquafishes"
+  },
+  "targets": {},
+  "etags": {}
+}
