@@ -1,0 +1,29 @@
+.mbg-admin-offer,.mbg-admin-offer *{box-sizing:border-box}.mbg-admin-offer{max-width:1040px;color:#1c3938}.mbg-admin-offer header{margin:0 0 22px}.mbg-admin-offer header h1{font:500 clamp(28px,4vw,38px) Georgia,serif;margin:7px 0;color:#123d36}.mbg-admin-offer header p,.mbg-admin-offer__panel>p{color:#617473;line-height:1.6;font-size:13px}.mbg-admin-offer__label{font-size:10px;letter-spacing:.16em;font-weight:800;color:#997342}.mbg-admin-offer__panel{background:#fff;border:1px solid #dde4df;border-radius:13px;padding:clamp(16px,3vw,28px);margin-bottom:18px;box-shadow:0 7px 22px rgba(28,52,49,.06)}.mbg-admin-offer__panel h2{font:500 24px Georgia,serif;margin:0;color:#1d4a3c}.mbg-admin-offer__panel label:not(.mbg-admin-offer__item):not(.mbg-admin-offer__check){display:block;font-size:13px;font-weight:700;margin:18px 0 7px}.mbg-admin-offer input:not([type=checkbox]):not([type=file]),.mbg-admin-offer textarea,.mbg-admin-offer select{width:100%;border:1px solid #cad7d3;background:#fff;color:#243e3b;border-radius:8px;padding:11px 12px;font:inherit}.mbg-admin-offer input[type=file]{max-width:100%}.mbg-admin-offer small{font-size:11px;color:#6c7e7b;line-height:1.5;display:block;margin-top:6px}.mbg-admin-offer__preview{display:grid;place-items:center;aspect-ratio:16/9;background:#0b2126;border:3px double #b79b68;border-radius:5px;color:#d7c7a6;margin-top:18px;overflow:hidden;text-align:center}.mbg-admin-offer__preview img{width:100%;height:100%;object-fit:contain}.mbg-admin-offer__dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.mbg-admin-offer__check{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:650;margin-top:21px}.mbg-admin-offer__filters{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:10px;margin:17px 0}.mbg-admin-offer__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;max-height:380px;overflow:auto}.mbg-admin-offer__item{display:flex;align-items:center;gap:11px;padding:10px;background:#f7faf8;border:1px solid #dce5df;border-radius:8px;cursor:pointer}.mbg-admin-offer__item>span:last-child{min-width:0}.mbg-admin-offer__item b{display:block;font-size:12px;overflow-wrap:anywhere}.mbg-admin-offer__thumb{width:52px;height:52px;flex:none;background:#e8f0eb;display:grid;place-items:center;border-radius:5px;overflow:hidden}.mbg-admin-offer__thumb img{width:100%;height:100%;object-fit:contain}.mbg-admin-offer__selected{border-top:1px solid #e1e9e4;margin-top:20px;padding-top:15px}.mbg-admin-offer__selected strong{display:block;margin-bottom:9px}.mbg-admin-offer__selected button{border:1px solid #acc8bf;background:#eaf3ed;color:#234c41;padding:7px 10px;border-radius:999px;cursor:pointer;margin:3px;font-size:12px}.mbg-admin-offer__save{padding:14px 25px;background:#155347;border:0;border-radius:8px;color:#fff;font-weight:750;cursor:pointer}.mbg-admin-offer__save:disabled{opacity:.6;cursor:wait}.mbg-admin-offer__alert,.mbg-admin-offer__notice{padding:13px;margin-bottom:14px;border-radius:6px;background:#fff0ed;color:#862e25}.mbg-admin-offer__notice{background:#e5f5ed;color:#245f43}@media(max-width:700px){.mbg-admin-offer__dates,.mbg-admin-offer__filters,.mbg-admin-offer__list{grid-template-columns:1fr}}
+
+/* Override global site header rule inside this admin panel only. */
+.mbg-admin-offer > header {
+  position: static !important;
+  inset: auto !important;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 0 0 22px;
+  padding: 0;
+  color: #1c3938;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+  z-index: auto;
+}
+.mbg-admin-offer > header h1 {
+  position: static !important;
+  width: auto;
+  max-width: 100%;
+  text-align: left;
+  line-height: 1.2;
+}
+.mbg-admin-offer > header p {
+  margin: 8px 0 0;
+  max-width: 780px;
+}

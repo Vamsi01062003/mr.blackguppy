@@ -1,0 +1,251 @@
+/* =========================================================
+   MR BLACK GUPPY — HOMEPAGE HERO
+   Desktop design preserved + Mobile responsive fix
+========================================================= */
+
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #020807;
+}
+
+.hero-exact {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #020807;
+  line-height: 0;
+}
+
+.hero-background {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+/* Explore Collection Button */
+
+.hero-explore-btn {
+  position: absolute;
+  left: 7%;
+  top: 65.65%;
+  z-index: 45;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 15px 26px;
+  box-sizing: border-box;
+
+  background: linear-gradient(135deg, #fbb03b 0%, #e89923 100%);
+  color: #1a1202;
+  border: 1px solid rgba(255, 235, 179, 0.45);
+  border-radius: 9999px;
+
+  font-family:
+    "DM Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+
+  font-size: 16px;
+  font-weight: 750;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  outline: none;
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(245, 158, 11, 0.25);
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero-explore-btn:hover {
+  transform: translateY(-2px) scale(1.025);
+
+  background: linear-gradient(135deg, #ffc059 0%, #f0a32d 100%);
+
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.5),
+    0 0 24px rgba(245, 158, 11, 0.45);
+}
+
+.hero-explore-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.hero-explore-arrow {
+  display: inline-block;
+  font-size: 1.15em;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.hero-explore-btn:hover .hero-explore-arrow {
+  transform: translateX(4px);
+}
+
+/* Section scroll offsets */
+
+.home-collection-section,
+.home-plants-section,
+.home-visit-section,
+.home-contact-section {
+  scroll-margin-top: 70px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+  .hero-explore-btn {
+    left: 5.5%;
+    top: 53%;
+    padding: 11px 20px;
+    font-size: 12px;
+  }
+
+  .hero-scroll-btn {
+    left: 5.5%;
+    top: 63%;
+  }
+}
+
+/* =========================================================
+   MOBILE — UP TO 600PX
+   Desktop styles are not affected
+========================================================= */
+
+@media screen and (max-width: 600px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .home-page {
+    width: 100%;
+    min-height: 100svh;
+    overflow-x: hidden;
+  }
+
+  /* Full-screen mobile hero */
+
+  .hero-exact {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+    background: #020807;
+    line-height: normal;
+  }
+
+  /* Existing hero background image */
+
+  .hero-background {
+    position: absolute;
+    inset: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+    object-position: center center;
+
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* Explore Collection button */
+
+  .hero-explore-btn {
+    position: absolute;
+
+    left: 6%;
+    top: 65.5%;
+
+    padding: 8px 11px;
+    font-size: 4px;
+
+    white-space: nowrap;
+    z-index: 45;
+  }
+
+  /* Better touch interaction */
+
+  .hero-explore-btn,
+  .hero-scroll-btn {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .home-collection-section,
+  .home-plants-section,
+  .home-visit-section,
+  .home-contact-section {
+    scroll-margin-top: 60px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE PHONES
+========================================================= */
+
+@media screen and (max-width: 380px) {
+  .hero-explore-btn {
+    left: 5%;
+    padding: 11px 15px;
+    font-size: 11px;
+  }
+
+  .hero-scroll-btn {
+    left: 5%;
+  }
+}
+/* Reduce the gap between mobile hero and collection */
+@media screen and (max-width: 600px) {
+  .hero-exact {
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero-background {
+    position: relative;
+    inset: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .home-collection-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}

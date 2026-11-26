@@ -1,0 +1,23 @@
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example
+.DS_Store
+.firebase/
+
+# Local image optimization environment
+.image-venv/
+
+# Local environments and backups
+.image-venv/
+*.bak
+*.backup
+*.pagination-backup
+*.before-premium.bak
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
